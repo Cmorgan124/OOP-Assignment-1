@@ -51,6 +51,7 @@ public class Ticket {
 			ticket.admitted = false;
 			return false;
 		}
+		ticket.admitted = true;
 		return true;
 	}
 
@@ -61,6 +62,7 @@ public class Ticket {
 			ticket.canceled = false;
 			return false;
 		}
+		ticket.canceled = true;
 		return true;
 	}
 
