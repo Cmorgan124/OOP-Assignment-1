@@ -15,18 +15,10 @@ public class TicketManager {
 	} 
 	
 	public boolean cancelTicket(int id) {
-		if (!this.ticketBook.findById(id).isCanceled()) {
-			this.ticketBook.findById(id).cancelTicket();
-			return true; 
-		}
-		return false;
+		return this.ticketBook.findById(id).cancel();
 	}
 	
 	public boolean admitTicket(int id) {
-		if (!this.ticketBook.findById(id).isAdmitted()) {
-			this.ticketBook.findById(id).admitTicket();
-			return true; 
-		}
-		return false;
+		return this.ticketBook.findById(id).admit();
 	}
 }
