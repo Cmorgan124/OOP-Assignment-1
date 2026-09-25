@@ -54,4 +54,14 @@ public class Ticket {
 		return true;
 	}
 
+	public boolean cancel(Ticket ticket)
+	{
+		if(ticket.admitted = true)
+		{
+			ticket.canceled = false;
+			return false;
+		}
+		return true;
+	}
+
 }
