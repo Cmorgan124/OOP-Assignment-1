@@ -43,4 +43,15 @@ public class Ticket {
 		this.admitted = admitted;
 		this.canceled = canceled;
 	}
+
+	public boolean admit(Ticket ticket)
+	{
+		if(ticket.canceled = true)
+		{
+			ticket.admitted = false;
+			return false;
+		}
+		return true;
+	}
+
 }
