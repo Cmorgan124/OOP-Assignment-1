@@ -76,5 +76,12 @@ public class Ticket {
 		return admitted;
 	}
 	
-
+	public boolean isActive()
+	{
+		if(admitted || canceled)
+		{
+			return false;
+		}
+		return true;
+	}
 }
