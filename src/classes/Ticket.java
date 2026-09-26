@@ -71,5 +71,10 @@ public class Ticket {
 		return canceled;
 	}
 	
+	public boolean isAdmitted()
+	{
+		return admitted;
+	}
+	
 
 }
