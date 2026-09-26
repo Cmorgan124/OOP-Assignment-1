@@ -93,6 +93,25 @@ public class Ticket {
 		return event;
 	}
 	
+	public String toString()
+	{
+		String status;
+		if(admitted)
+		{
+			status = "Admitted";
+		}
+		else if(canceled)
+		{
+			status = "Canceled";
+		}
+		else
+		{
+			status = "Active";
+		}
+		
+		return "Ticket ID: " + id + ", Student Name: " + studentName + ", Event: " + event + ", Ticket Type: " + ticketType + ", Status: " + status + ".";
+	}
+	
 
 	
 }
