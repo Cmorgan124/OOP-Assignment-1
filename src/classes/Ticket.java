@@ -44,14 +44,13 @@ public class Ticket {
 		this.canceled = canceled;
 	}
 
-	public boolean admit(Ticket ticket)
+	public boolean admit()
 	{
-		if(ticket.canceled)
+		if(canceled || admitted)
 		{
-			ticket.admitted = false;
 			return false;
 		}
-		ticket.admitted = true;
+		admitted = true;
 		return true;
 	}
 
