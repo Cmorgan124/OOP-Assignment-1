@@ -46,7 +46,7 @@ public class Ticket {
 
 	public boolean admit(Ticket ticket)
 	{
-		if(ticket.canceled = true)
+		if(ticket.canceled)
 		{
 			ticket.admitted = false;
 			return false;
@@ -57,7 +57,7 @@ public class Ticket {
 
 	public boolean cancel(Ticket ticket)
 	{
-		if(ticket.admitted = true)
+		if(ticket.admitted)
 		{
 			ticket.canceled = false;
 			return false;
@@ -65,5 +65,11 @@ public class Ticket {
 		ticket.canceled = true;
 		return true;
 	}
+	
+	public boolean isCanceled()
+	{
+		return canceled;
+	}
+	
 
 }
