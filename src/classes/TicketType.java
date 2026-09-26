@@ -17,4 +17,17 @@ public class TicketType {
 		this.typeName = typeName;
 		this.price = price;
 	}
+	
+	public String getTypeName()
+	{
+		return this.typeName;
+	}
+	
+	
+	public double getPrice()
+	{
+		return this.price;
+	}
+	
+	
 }
