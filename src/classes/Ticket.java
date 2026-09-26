@@ -54,14 +54,13 @@ public class Ticket {
 		return true;
 	}
 
-	public boolean cancel(Ticket ticket)
+	public boolean cancel()
 	{
-		if(ticket.admitted)
+		if(admitted || canceled)
 		{
-			ticket.canceled = false;
 			return false;
 		}
-		ticket.canceled = true;
+		canceled = true;
 		return true;
 	}
 	
