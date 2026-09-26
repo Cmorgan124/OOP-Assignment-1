@@ -82,4 +82,17 @@ public class Ticket {
 		}
 		return true;
 	}
+	
+	public int getID()
+	{
+		return id;
+	}
+	
+	public Event getEvent()
+	{
+		return event;
+	}
+	
+
+	
 }
