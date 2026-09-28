@@ -11,7 +11,7 @@ public class TicketBook {
 	
 	public void createTicket(int id, Event event, TicketType type, String studentName) {
 		if (count != 10) {
-			this.tickets[count] = new Ticket(id, event, type, studentName, false, false);
+			this.tickets[count] = new Ticket(id, studentName, event, type,  false, false);
 			count++;
 		} else
 		{
@@ -21,7 +21,7 @@ public class TicketBook {
 	
 	public Ticket findById(int id) {
 		for (int i=0; i<count; i++) {
-			if (this.tickets[i].getId() == id) {
+			if (this.tickets[i].getID() == id) {
 				return this.tickets[i];
 			}
 		}
