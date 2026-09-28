@@ -5,6 +5,10 @@ public class TicketManager {
 	private int idGenerator;
 	
 	TicketManager(TicketBook ticketBook){
+		if (ticketBook == null)
+		{
+			throw new IllegalArgumentException("A ticket book is required for this manager.");
+		}
 		this.ticketBook = ticketBook;
 		this.idGenerator = 1;
 	}

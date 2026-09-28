@@ -29,8 +29,9 @@ public class Event {
 		return this.location;
 	}
 	
+	@Override
 	public String toString() 
 	{
-		return this.eventName + "@" + this.location;
+		return this.eventName + " @ " + this.location;
 	}
 }

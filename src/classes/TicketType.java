@@ -32,7 +32,7 @@ public class TicketType {
 	@Override
 	public String toString()
 	{
-		return "Ticket Type: " + typeName + ", Price: $" + price + ".";
+		return typeName + ", Price: $" + price + ".";
 	}
 	
 }
