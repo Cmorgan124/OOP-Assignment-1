@@ -29,5 +29,10 @@ public class TicketType {
 		return this.price;
 	}
 	
+	@Override
+	public String toString()
+	{
+		return "Ticket Type: " + typeName + ", Price: $" + price + ".";
+	}
 	
 }
