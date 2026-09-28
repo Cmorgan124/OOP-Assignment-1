@@ -83,7 +83,7 @@ public class Ticket {
 		return true;
 	}
 	
-	public int getID()
+	public int getId()
 	{
 		return id;
 	}
@@ -93,6 +93,8 @@ public class Ticket {
 		return event;
 	}
 	
+	
+	@Override
 	public String toString()
 	{
 		String status;
