@@ -10,15 +10,15 @@ public class TicketManager {
 	}
 	
 	public void createTicket(Event event, TicketType type, String studentName) {
-		this.ticketBook.createTicket(idGenerator, event, type, studentName);
+		ticketBook.createTicket(idGenerator, event, type, studentName);
 		idGenerator++;
 	} 
 	
 	public boolean cancelTicket(int id) {
-		return this.ticketBook.findById(id).cancel();
+		return ticketBook.findById(id).cancel();
 	}
 	
 	public boolean admitTicket(int id) {
-		return this.ticketBook.findById(id).admit();
+		return ticketBook.findById(id).admit();
 	}
 }

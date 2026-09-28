@@ -11,7 +11,7 @@ public class TicketBook {
 	
 	public void createTicket(int id, Event event, TicketType type, String studentName) {
 		if (count != 10) {
-			this.tickets[count] = new Ticket(id, studentName, event, type,  false, false);
+			tickets[count] = new Ticket(id, studentName, event, type,  false, false);
 			count++;
 		} else
 		{
@@ -21,8 +21,8 @@ public class TicketBook {
 	
 	public Ticket findById(int id) {
 		for (int i=0; i<count; i++) {
-			if (this.tickets[i].getID() == id) {
-				return this.tickets[i];
+			if (tickets[i].getID() == id) {
+				return tickets[i];
 			}
 		}
 		return null;
@@ -30,14 +30,14 @@ public class TicketBook {
 	
 	public void printAll() {
 		for (int i=0; i<count; i++) {
-			System.out.println(this.tickets[i].toString());
+			System.out.println(tickets[i].toString());
 		}
 	}
 	
-	public void printForEvent(Event event) {
+	public void printForEvent(Event event) { // for this method, I decided to use a getter from the Ticket class in order to keep the field of "event" private and allow the Ticket class to return it instead, following demeter's law
 		for (int i=0; i<count; i++) {
-			if (this.tickets[i].getEvent() == event) {
-				System.out.println(this.tickets[i].toString());
+			if (tickets[i].getEvent() == event) {
+				System.out.println(tickets[i].toString());
 			}
 		}
 	}
